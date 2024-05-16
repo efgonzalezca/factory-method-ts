@@ -1,0 +1,1 @@
+export { sendEmailController } from "./notifications.controller";
