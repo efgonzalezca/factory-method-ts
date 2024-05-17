@@ -1,1 +1,1 @@
-export { sendEmailController } from "./notifications.controller";
+export { sendEmailController, sendSmsController, sendPushController } from './notifications.controller';

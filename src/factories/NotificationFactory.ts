@@ -1,7 +1,7 @@
 import { Notification, NotificationType } from '../types/Notification';
 import { EmailNotification, PushNotification, SmsNotification } from '../models';
 
-export class NotificationFactory {
+export abstract class NotificationFactory {
   static create(type: NotificationType, recipient: string, message: string): Notification {
     const notificationStrategy = {
       [NotificationType.EMAIL]: () => new EmailNotification(recipient, message),
