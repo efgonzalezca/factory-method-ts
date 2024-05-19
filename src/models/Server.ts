@@ -6,7 +6,6 @@ import config from '../config';
 import { routerApi } from '../api/routes';
 import { errorHandler, routeHandler } from '../api/middlewares';
 
-
 export class Server {
   private app: Application;
   private port: string;

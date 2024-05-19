@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "55554dd5-260d-4227-904d-c2150332e59b",
+		"name": "Factory Method",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14790662"
+	},
+	"item": [
+		{
+			"name": "send email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"efgonzalezca@gmail.com\",\n    \"message\": \"This is the test message\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/notifications/email",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications",
+						"email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send sms",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cellphone\": \"3218889999\",\n    \"message\": \"This is the test message\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/notifications/sms",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications",
+						"sms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send push notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\":\"eDtkLQMjAXY:APA91bGZ9niRa3WzM1ZUkT2Tk6qnyes4bE9pmukBZsHgHD8F7Jh7omCfrL-K6kgmXYtPfRHJGbK6YZXhFWS_zMS_sQ8JBBNNsEMBcVHt4jqT3ZXJgfFY6m4hG1CjV-RRGTPlzFY_Xhvw\",\n    \"message\": \"This is the test message\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/notifications/push",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications",
+						"push"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
